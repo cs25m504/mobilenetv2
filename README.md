@@ -50,7 +50,7 @@ The baseline MobileNet-v2 modifies the stem convolution stride (`2 -> 1`) and fi
 
 ### Run Baseline Training
 ```bash
-python train.py --epochs 60 --batch_size 128 --lr 0.1 --weight_decay 0.0005 --seed 42
+python train.py --epochs 60 --batch_size 128 --lr 0.1 --seed 42
 ```
 
 ### Baseline Specifications & Metrics
