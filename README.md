@@ -44,7 +44,7 @@ export WANDB_API_KEY="your_wandb_api_key"
 
 ---
 
-## 3. Reproducing Baseline Results (Question 1)
+## 3. Reproducing Baseline Results 
 
 The baseline MobileNet-v2 modifies the stem convolution stride (`2 -> 1`) and first bottleneck stage stride (`2 -> 1`) so that $32 \times 32$ CIFAR-10 inputs preserve a $4 \times 4$ feature map prior to global average pooling.
 
@@ -62,7 +62,7 @@ python train.py --epochs 60 --batch_size 128 --lr 0.1 --weight_decay 0.0005 --se
 
 ---
 
-## 4. Reproducing Compression Experiments (Questions 2–4)
+## 4. Reproducing Compression Experiments 
 
 ### Run a Single Compression Configuration
 Use `test.py` with `--weight_quant_bits` and `--activation_quant_bits`:
