@@ -83,16 +83,3 @@ python test.py --weight_quant_bits 2 --activation_quant_bits 4
 ```
 
 ---
-
-## 5. Summary of Results
-
-| Run Name | Weight Bits | Act Bits | Compressed Weight Size (MB) | Weight CR | Metadata Overhead (MB) | Compressed Act Size (MB) | Act CR | Overall CR | Top-1 Accuracy (%) |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| `w8_a8` | 8 | 8 | 2.447 | 3.54$\times$ | 0.0488 | 7.803 | 1.60$\times$ | 2.07$\times$ | **93.24%** |
-| `w8_a4` | 8 | 4 | 2.447 | 3.54$\times$ | 0.0488 | 7.031 | 1.78$\times$ | 2.23$\times$ | 83.31% |
-| `w4_a8` *(Optimal)* | 4 | 8 | 1.403 | 6.17$\times$ | 0.0488 | 7.803 | 1.60$\times$ | 2.30$\times$ | **91.77%** |
-| `w4_a4` | 4 | 4 | 1.403 | 6.17$\times$ | 0.0488 | 7.031 | 1.78$\times$ | 2.51$\times$ | 83.08% |
-| `w4_a3` | 4 | 3 | 1.403 | 6.17$\times$ | 0.0488 | 6.838 | 1.83$\times$ | 2.57$\times$ | 31.42% |
-| `w3_a4` | 3 | 4 | 1.403 | 6.17$\times$ | 0.0488 | 7.031 | 1.78$\times$ | 2.51$\times$ | 75.00% |
-| `w3_a3` | 3 | 3 | 1.403 | 6.17$\times$ | 0.0488 | 6.838 | 1.83$\times$ | 2.57$\times$ | 30.37% |
-| `w2_a4` *(Max CR)* | 2 | 4 | **0.881** | **9.83$\times$** | 0.0488 | 7.031 | 1.78$\times$ | **2.68$\times$** | 11.32% |
